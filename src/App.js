@@ -33,9 +33,9 @@ function App() {
       paper = new Paper(paperOpts).create();
       setError();
     } catch (err) {
-      console.log('msg', err.message)
+      console.log('msg', err.message);
+      
       setError(err.message);
-      return;
     }
     setPaper(paper);
   };
